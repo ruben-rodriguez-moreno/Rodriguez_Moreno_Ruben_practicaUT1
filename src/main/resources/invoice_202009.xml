@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+    <articulo>
+        <nombre>Fiesta Glamour</nombre>
+        <tipo>Vestido</tipo>
+        <fechaVenta>29/08/2022</fechaVenta>
+        <precio moneda="EUR">80.00</precio>
+        <costes>
+            <derivados>10.5</derivados>
+            <produccion>15</produccion>
+        </costes>
+        <impuestos>35.5</impuestos>
+    </articulo>
+    <articulo>
+        <nombre>Fiesta Glamour</nombre>
+        <tipo>Vestido</tipo>
+        <fechaVenta>30/08/2022</fechaVenta>
+        <precio moneda="EUR">80.00</precio>
+        <costes>
+            <derivados>10.5</derivados>
+            <produccion>15</produccion>
+        </costes>
+        <impuestos>35.5</impuestos>
+    </articulo>
+    <articulo>
+        <nombre>Snoopy</nombre>
+        <tipo>Camiseta</tipo>
+        <fechaVenta>29/08/2022</fechaVenta>
+        <precio moneda="EUR">10.00</precio>
+        <costes>
+            <derivados>2.5</derivados>
+            <produccion>4.2</produccion>
+        </costes>
+        <impuestos>2.1</impuestos>
+    </articulo>
+    <articulo>
+        <nombre>Friends</nombre>
+        <tipo>Camiseta</tipo>
+        <fechaVenta>30/08/2022</fechaVenta>
+        <precio moneda="EUR">10.00</precio>
+        <costes>
+            <derivados>3.12</derivados>
+            <produccion>3.65</produccion>
+        </costes>
+        <impuestos>2.1</impuestos>
+    </articulo>
+</articulos>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="articulos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="articulo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="articulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="tipo"/>
+                <xs:element ref="fechaVenta"/>
+                <xs:element ref="precio"/>
+                <xs:element ref="costes"/>
+                <xs:element ref="impuestos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="tipo" type="xs:string"/>
+    <xs:element name="fechaVenta" type="xs:string"/>
+    <xs:element name="precio">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:decimal">
+                    <xs:attribute name="moneda" use="required" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="costes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="derivados"/>
+                <xs:element ref="produccion"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="derivados" type="xs:decimal"/>
+    <xs:element name="produccion" type="xs:decimal"/>
+    <xs:element name="impuestos" type="xs:decimal"/>
+</xs:schema>
